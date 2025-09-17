@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>收集物小遊戲</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Start Page -->
+<div id="startPage">
+  <h1>收集物小遊戲</h1>
+  <button id="startBtn">開始遊戲</button>
+</div>
+
+<!-- 放在 gameArea 或 score 上方皆可 -->
+<button id="muteBtn">🔊</button>
+
+<div id="score">分數: 0 | 時間: 60s</div>
+<div id="gameArea">
+  <div id="player"></div>
+  <div id="item"></div>
+  <div id="enemy"></div>
+  <div id="powerup"></div>
+
+  <div id="joystickContainer">
+    <div id="joystick"></div>
+  </div>
+
+  <!-- Game Over 視窗 -->
+  <div id="gameOverScreen" class="hidden">
+    <div id="gameOverText">Game Over</div>
+    <div id="finalScore">分數: 0</div>
+    <button id="restartBtn">返回開始頁</button>
+  </div>
+</div>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<script src="game.js"></script>
+</body>
+</html>
