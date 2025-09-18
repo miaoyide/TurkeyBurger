@@ -1,3 +1,10 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -16,6 +23,11 @@ h1{
 
 h2{
   font-size: 0.75em;
+}
+
+p{
+  font-size: 0.75em;
+  margin: 0;
 }
 
 #copyright {
@@ -153,7 +165,7 @@ h2{
 }
 
 #startPage button {
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 10px 20px;
   font-size: 22px;
   border: none;

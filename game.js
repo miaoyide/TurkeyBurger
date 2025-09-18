@@ -153,7 +153,7 @@ function startTimer(){
 // --- Game Over ---
 function showGameOver(){
   gameOver = true;
-  finalScore.textContent = `分數: ${score}`;
+  finalScore.textContent = `你吃了: ${score} 顆水果`;
   gameOverScreen.classList.remove('hidden');
 
   // 重置鍵盤狀態與搖桿方向
