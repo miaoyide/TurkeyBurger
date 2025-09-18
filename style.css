@@ -57,8 +57,8 @@ p{
 }
 
 #player {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   background-image: url(../TurkeyBurger/images/player.png);
   background-position: center center;
   background-size: cover;
@@ -81,8 +81,8 @@ p{
 }
 
 #enemy {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   background-image: url(../TurkeyBurger/images/enemy.png);
   background-position: center center;
   background-size: cover;
