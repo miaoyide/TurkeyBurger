@@ -246,6 +246,15 @@ restartBtn.addEventListener('click', ()=>{
 // --- 靜音按鈕切換 ---
 muteBtn.addEventListener('click', ()=>{
   isMuted = !isMuted;
-  bgMusic.volume = isMuted ? 0 : 1;
+  bgMusic.muted = isMuted;   // iOS Safari 相容
   muteBtn.textContent = isMuted ? "🔇" : "🔊";
 });
+
+function resizeGameArea(){
+  const vh = window.innerHeight; // 取得可視高度
+  gameArea.style.height = vh + 'px';
+}
+
+window.addEventListener('resize', resizeGameArea);
+window.addEventListener('orientationchange', resizeGameArea);
+resizeGameArea(); // 初始化
