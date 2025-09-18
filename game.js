@@ -250,11 +250,14 @@ muteBtn.addEventListener('click', ()=>{
   muteBtn.textContent = isMuted ? "🔇" : "🔊";
 });
 
-function resizeGameArea(){
-  const vh = window.innerHeight; // 取得可視高度
-  gameArea.style.height = vh + 'px';
+// 設定真正的 viewport 高度
+function setFullHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
-window.addEventListener('resize', resizeGameArea);
-window.addEventListener('orientationchange', resizeGameArea);
-resizeGameArea(); // 初始化
+// 初始化
+setFullHeight();
+
+// 視窗大小改變時更新
+window.addEventListener('resize', setFullHeight);
