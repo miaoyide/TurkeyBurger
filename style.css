@@ -233,6 +233,7 @@ p{
   padding: 5px 10px;
   cursor: pointer;
   z-index: 15;
+  margin: 0;
 }
 
 #muteBtn:hover {
